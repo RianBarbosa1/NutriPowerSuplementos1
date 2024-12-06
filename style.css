@@ -1,0 +1,75 @@
+
+body {
+   font-family: "Chakra Petch", sans-serif; /* Define a fonte padrão */
+   background-image: url(imagens/fundo2.avif);
+   background-size: 800pt;
+   background-position: center;
+   display: flex;
+   align-items: center; /* Centraliza os itens horizontalmente */
+   justify-content: center; /* Centraliza os itens verticalmente */
+   height: 100vh; /* Preenche a altura total da viewport */
+   margin: 0; /* Remove a margem padrão */
+   padding: 0; /* Remove o padding padrão */
+   
+}
+
+.buttona {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 5px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 5px 20px black;
+    position: absolute;
+    left: 44.4%;
+    bottom: 70px;
+    cursor: pointer;
+    width: 20cap;
+    height: 30px;
+    border: none;
+    border-radius: 20px
+}
+
+button:hover{
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 5px 20px rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+    transform: scale(1.1);
+    color: aliceblue;
+}
+
+.img1{
+position: absolute;
+left: 35%;
+top: 10%;
+border-radius: 50%;
+filter: drop-shadow(0px 5px 20px rgb(255, 255, 255));
+animation: img1 5s infinite;
+}
+
+@keyframes img1 {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+header {
+    background-color: aliceblue;
+}
+
+/* Estilos para telas muito pequenas (celulares muito pequenos) */
+@media (max-width: 480px) {
+    .buttona {
+        width: 16ch; /* Ajusta ainda mais a largura do botão */
+        height: 35px; /* Ajusta a altura do botão */
+    }
+
+    .img1 {
+        width: 50%; /* Reduz o tamanho da imagem para telas muito pequenas */
+    }
+}

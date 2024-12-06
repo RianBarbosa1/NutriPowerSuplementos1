@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Links para CSS e fontes -->
+    <link rel="stylesheet" href="style5.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=nest_protect" />
+    <link rel="stylesheet" href="https://www.flaticon.com/br/icones-gratis/facebook" title="facebook ícones" />
+   
+</head>
+
+<body style="background-color: rgb(241, 241, 241);">
+
+    <!-- Cabeçalho -->
+    <header>
+        <a href="home.html">
+            <img src="imagens/NutriPower.png" width="220px" height="85px" alt="NutriPower">
+        </a>
+
+        <!-- Formulário de busca -->
+        <form action="pesquisa.html" method="GET">
+            <input type="text" name="q" placeholder="O quê está buscando?" id="busca">
+            <button type="submit">
+                <span class="material-icons">search</span>
+            </button>
+        </form>
+
+        <!-- Identidade do usuário -->
+        <div class="identy">
+            <a href="">
+                <span class="material-icons">perm_identity</span>
+            </a>
+        </div>
+
+        <!-- Link de login -->
+        <a href="Login.html" class="calag1"> Login</a>
+
+        <!-- Ícone do carrinho -->
+        <div class="car">
+            <a href="" >
+                <span class="material-icons">shopping_cart</span>  
+               <a class="carrinho">  seu carrinho</a>
+            </a>
+        </div>
+    </header>
+
+    <!-- Navegação -->
+    <nav>
+        <ul>
+            <section class="spacing">
+              <li class="menu-item">
+                 <a href="" class="menu"><b>CATEGORIAS</b></a>
+                 <ul class="submenu">
+                    <li><a href=""><p class="sub1">PROTEÍNA</p><br><br><p class="subsubmenu"><a href="wheyprotein.html"> Whey Protein </a></p></a></li>
+                    <li><a href=""><p class="sub1">AMINOÁCIDO</p><br><br><p class="subsubmenu"><a href="creatina.html"> Creatina </a></p></a></li>
+                    <li><a href=""><p class="sub1">OUTROS</p><br><br><p class="subsubmenu"><a href="pré-treino.html">Pré-Treino</a></p></a></li>
+
+                    <li><a href=""><p class="sub1">MARCAS</p>
+                        <br><br>
+                        <p class="subsubmenu">
+                            <a href="max.html"> Max Titanium</a><br><br>
+                            <a href="integral.html">Integral Médica</a><br><br>
+                            <a href="dark.html">Dark Lab</a><br><br>
+                            <a href="growth.html">Growth</a><br><br>
+                            <a href="black.html">Black Sckull</a>
+                        </p>
+                        </a>
+                    </li>
+                 </ul>
+              </li>    
+                <a href="creatina.html" class="menu"><b>CREATINA</b></a>
+                <a href="wheyprotein.html" class="menu"><b>WHEYPROTEIN</b></a>
+                <a href="pré-treino.html" class="menu"><b>PRÉ-TREINO</b></a>
+                <a href="marcas.html" class="menu"><b>MARCAS</b></a>
+            </section>
+        </ul>
+    </nav>
+    
+    <div class="creatine">
+        <img src="imagens/prétreino.webp">
+    </div>  
+  <div class="paragrafos">
+    <div class="resumo">
+        <h1><b>O QUE É PRÉ-TREINO?</b></h1>
+        <p>
+            <b>•</b>O pré-treino é um suplemento alimentar utilizado para melhorar o desempenho físico durante a prática de atividades físicas, como musculação, corrida ou qualquer outro exercício intenso. Ele é consumido geralmente antes do treino, e sua função principal é aumentar a energia, a resistência, a concentração e a performance geral no treino.
+        </p> 
+
+        <p>   
+            <b>•</b>O consumo do pré-treino deve ser feito com cuidado, pois o excesso de alguns ingredientes, como a cafeína, pode causar efeitos indesejáveis, como ansiedade, insônia ou taquicardia. Além disso, cada pessoa pode reagir de forma diferente aos componentes, por isso é importante testar a dose e escolher um suplemento que se adeque ao seu organismo.
+        </p>
+    </div> 
+
+    <div class="resumo">   
+        <h1><b>QUEM PODE TOMAR PRÉ-TREINO?</b></h1>
+        <p>
+            <b>•</b>O pré-treino pode ser utilizado por muitas pessoas que buscam melhorar o desempenho durante seus exercícios, mas, como qualquer suplemento, é importante considerar alguns fatores antes de usá-lo. Aqui estão algumas orientações sobre quem pode tomar pré-treino:Atletas e praticantes de atividade física, Pessoas que buscam mais energia e foco no treino.
+        </p>
+         <p> 
+            <b>•</b><a style="font-weight: bold;">Quem deve ter cuidado ou evitar o uso de pré-treino:</a>Pessoas com problemas cardíacos ou hipertensão, Grávidas ou lactantes, Pessoas sensíveis a estimulantes, Pessoas com condições médicas específicas, Menores de idade.
+        </p>
+    </div>
+  </div> 
+
+  <div class="filtro">
+    <h2>Filtrar Produtos</h2>
+    <form action="" method="GET">
+        <div class="filtro-item">
+            <label for="tipo-Pré-Treino">Tipo de Pré-Treino:</label>
+            <select id="tipo-Pré-Treino" name="tipo-Pré-Treino">
+                <option value="todas">Todas</option>
+                <option value="pura">Pura</option>
+            </select>
+        </div>
+
+        <div class="filtro-item">
+            <label for="faixa-preco">Faixa de Preço:</label>
+            <select id="faixa-preco" name="faixa-preco">
+                <option value="todos">Todos</option>
+                <option value="menor-70">Até R$70</option>
+                <option value="70-100">R$70 - R$100</option>
+                <option value="maior-100">Acioma de R$100</option>
+            </select>
+        </div>
+
+        <!-- Filtro por Marca -->
+        <div class="filtro-item">
+            <label for="marca">Filtrar por Marca:</label>
+            <select id="marca" name="marca">
+                <option value="todas">Todas</option>
+                <option value="max-titanium">Max Titanium</option>
+                <option value="d-lab">Dark Lab</option>
+                <option value="growth">Growth</option>
+                <option value="horus">black sckull</option>
+                <option value="intense">integral médica</option>
+            </select>
+        </div>
+
+        <!-- Contêiner para o botão de filtro -->
+        <div class="filtro-button-container">
+            <button type="submit">Aplicar Filtros</button>
+        </div>
+    </form>
+</div>
+
+    
+    <main class="produto-container">
+
+      <div class="box1">
+        <img src="imagensblack/pre1black.webp" height="163px" alt="Égide 300g Max Titanium">
+            <p>PW Bone Crusher-300G<br><br>
+                <span class="riscado">De R$ 169,90</span> <span class="color">Por R$ 119,90</span> 2x de R$ 59,95<br><br>
+                <a href="#">Adicionar ao carrinho</a>
+            </p>
+    </div>
+
+    <div class="box1">
+        <img src="imagensblack/pre2black.webp" width="200px" alt="Égide 150g Max Titanium">
+            <p>PW Bone Crusher-150G<br><br>
+                <span class="riscado">De R$ 109,90</span> <span class="color">Por R$ 69,90</span> 2x de R$ 34,95<br><br>
+                <a href="#">Adicionar ao carrinho</a>
+            </p>
+    </div>
+
+    <div class="box1">
+        <img src="imagensblack/pre3black.webp" height="163px" alt="Whey DR Peanut 900g">
+            <p>Pré-Treino Legacy- 300g<br><br>
+                <span class="riscado">De R$ 159,90</span> <span class="color">Por R$ 139,90</span> 2x de R$ 69,95<br><br>
+                <a href="#">Adicionar ao carrinho</a>
+            </p>
+    </div>
+
+    <div class="box1">
+        <img src="imagensblack/pre4black.webp" height="182px" alt="100% Whey refil 900g">
+            <p>Pré-Treino B.O.P.E 300g<br><br>
+                <span class="riscado">De R$ 109,90</span> <span class="color">Por R$ 89,90</span> 2x de R$ 44,95<br><br>
+                <a href="#">Adicionar ao carrinho</a>
+            </p>
+    </div>
+
+    <div class="box1">
+        <img src="imagensdark/pre1dark.webp" height="163px" alt="Égide 300g Max Titanium"><br>
+        <p>PW Venom D Lab 300G<br><br>
+            <span class="riscado">De R$ 159,90</span> <span class="color">Por R$ 119,90</span> 2x de R$ 59,95<br><br>
+            <a href="#">Adicionar ao carrinho</a>
+        </p>
+    </div>
+
+    <div class="box1">
+        <img src="imagensgrowth/pre1g.webp" height="163px" alt="Égide 300g Max Titanium">
+            <p>Pré-Treino HAZE 300G<br><br>
+                <span class="riscado">De R$ 159,90</span> <span class="color">Por R$ 109,90</span> 2x de R$ 54,95<br><br>
+                <a href="#">Adicionar ao carrinho</a>
+            </p>
+    </div>
+
+    <div class="box1">
+        <img src="imagensgrowth/pre2g.webp" width="200px" alt="Égide 150g Max Titanium">
+            <p>Pré-Treino Insanity 300g<br><br>
+                <span class="riscado">De R$ 129,90</span> <span class="color">Por R$ 104,90</span> 2x de R$ 52,45<br><br>
+                <a href="#">Adicionar ao carrinho</a>
+            </p>
+    </div>
+
+    <div class="box1">
+        <img src="imagensint/pre1int.png" height="182px" alt="Horus 300g Max Titanium">
+            <p>Pré-Treino HUGER (160G)<br><br>
+                <span class="riscado">De R$ 89,90</span> <span class="color">Por R$ 69,90</span> 2x de R$ 34,95<br><br>
+                <a href="#">Adicionar ao carrinho</a>
+            </p>
+    </div>
+
+    <div class="box1">
+        <img src="imagensint/pre2int.png" height="163px" alt="Égide 300g Max Titanium">
+        <p>Pré-Treino HUGER (320G)<br><br>
+            <span class="riscado">De R$ 169,90</span> <span class="color">Por R$ 119,90</span> 2x de R$ 59,95<br><br>
+            <a href="#">Adicionar ao carrinho</a>
+        </p>
+    </div>
+
+    <div class="box1">
+        <img src="imagensint/pre3int.png" width="200px" alt="Égide 150g Max Titanium">
+            <p>ÉVORA PW (150G)<br><br>
+                <span class="riscado">De R$ 99,90</span> <span class="color">Por R$ 69,90</span> 2x de R$ 34,95<br><br>
+                <a href="#">Adicionar ao carrinho</a>
+            </p>
+    </div>
+
+    <div class="box1">
+        <img src="imagensmax/pre1max.png" height="182px" alt="Horus 300g Max Titanium">
+        <p>Horus (300g) Max Titanium<br><br>
+            <span class="riscado">De R$ 169,90</span> <span class="color">Por R$ 129,90</span> 2x de R$ 65,95<br><br>
+            <a href="#">Adicionar ao carrinho</a>
+        </p>
+    </div>
+
+    <div class="box1">
+        <img src="imagensmax/pre3max.png" height="163px" alt="Égide 300g Max Titanium">
+            <p>Égide (300g) Max Titanium<br><br>
+                <span class="riscado">De R$ 179,90</span> <span class="color">Por R$ 129,90</span> 2x de R$ 65,95<br><br>
+                <a href="#">Adicionar ao carrinho</a>
+            </p>
+    </div>
+
+    <div class="box1">
+        <img src="imagensmax/pre2max.png" height="182px" alt="Horus 150g Max Titanium">
+        <p>Horus (150g) Max Titanium<br><br>
+            <span class="riscado">De R$ 105,90</span> <span class="color">Por R$ 75,95</span> 2x de R$ 37,95<br><br>
+            <a href="#">Adicionar ao carrinho</a>
+        </p>
+    </div>
+
+    <div class="box1">
+        <img src="imagensmax/pre4max.png" width="200px" alt="Égide 150g Max Titanium">
+        <p>Égide (150g) Max Titanium<br><br>
+            <span class="riscado">De R$ 109,90</span> <span class="color">Por R$ 79,90</span> 2x de R$ 39,95<br><br>
+            <a href="#">Adicionar ao carrinho</a>
+        </p>
+    </div>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer1">
+        <a href="#">Redes Sociais</a>
+        <div class="icons">
+            <span class="material-symbols-outlined">nest_protect</span>
+        </div>
+        <img class="face" src="imagens/facebook.png" width="30px" height="25px" alt="Facebook">
+        <img class="twitter" src="imagens/twitter.png" width="20px" height="20px" alt="Twitter">
+        <p class="frase2"><b>Receba todas as promoções</b><br>Quer receber nossas ofertas? Cadastre-se e comece a recebê-las!</p>
+        <input type="text" class="input1" name="q" placeholder="Nome Completo">
+        <input type="text" class="input2" name="q" placeholder="Email">
+        <input type="text" class="input3" name="q" placeholder="OK">
+    </footer>
+
+    <footer class="footer2">
+        <div class="mais1">
+            <a href="#">Política de Privacidade</a>
+            <a href="#">Frete Grátis e Brinde</a>
+            <a href="#">Trocas e Devoluções</a>
+            <a href="#">Como Rastrear Meu Pedido?</a>
+            <a href="#">Pagamentos e Envios</a>
+            <a href="#">Quem Somos?</a>
+        </div>
+
+        <div class="mais2">
+            <a><b>Entre em contato</b></a>
+            <a>+55 (82)33514169</a>
+            <a>contato@nutripowersuplementos.com.br</a>
+            <a>Atendimento: segunda à sexta das 07:30 às 16:30 (exceto feriados)</a>
+        </div>
+
+        <hr class="hr2">
+
+        <div class="final1">
+            <p>Formas de pagamento</p>
+            <img src="imagens/visa.png" width="50px" height="30px" alt="Visa">
+            <img src="imagens/mastercard.png" width="50px" height="30px" alt="Mastercard">
+            <img src="imagens/hipercard.png" width="50px" height="30px" alt="Hipercard">
+            <img src="imagens/elo.png" width="50px" height="30px" alt="Elo">
+            <img src="imagens/boletos.svg" width="40px" height="30px" alt="Boleto">
+            <img src="imagens/pix.png" width="50px" height="30px" alt="Pix">
+        </div>
+
+        <div class="final2">
+            <p>Meios de envio</p>
+            <img src="imagens/correios.png" width="50px" height="30px" alt="Correios">
+            <img src="imagens/pac.png" width="50px" height="30px" alt="PAC">
+            <img src="imagens/sedex.png" width="50px" height="30px" alt="Sedex">
+        </div>
+
+        <div class="final3">
+            <p>Segurança</p>
+            <img src="imagens/segurança.png" width="110px" height="30px" alt="Segurança">
+        </div>
+
+        <hr class="hr3">
+
+        <div class="final4">
+            <p>Nutri Power ©2024. Nutri Power Suplementos. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <div class="whatsapp-icon">
+        <img src="imagens/zap.jpg">
+    </div>
+
+    <script src="script.js">
+    </script>
+
+</body>
+
+</html>

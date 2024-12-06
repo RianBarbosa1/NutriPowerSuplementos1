@@ -1,0 +1,197 @@
+body {
+    background-color: rgba(238, 236, 236, 0.696);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+}
+
+img {
+    display: flex;
+    margin: auto;
+    position: relative;
+    top: -70px;
+}
+
+.box{
+    display: flex;
+    margin: auto;
+    position: relative;
+    border-radius: 30px;
+    top: -170px;
+    height: 500px;
+    width: 400px;
+    border: none;
+    background: linear-gradient(red, black, gray);
+}
+
+
+h1 {
+    display: flex;
+    position: relative;
+    top: 20px;
+    left: 160px;
+}
+
+label {
+    display: flex;
+    margin: auto;
+    margin-top: 10px;
+    position: relative;
+    top: 152px;
+    left: -32.5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
+    color: aliceblue;
+}
+
+input {
+    display: flex;
+    margin: auto;
+    margin-top: 10px;
+    position: relative;
+    top: 150px;
+    left: -32.5px;
+    border-color: rgb(255, 0, 0);
+    color: #ffff;
+    padding-left: 20px;
+    background-color: transparent;
+    width: 300px;
+    height: 40px;
+    border-radius: 30px;
+}
+
+.p1 { 
+    position: relative;
+    text-align: center;
+    left: -22px;
+    top: 150px;
+    cursor: pointer;
+    color: aliceblue;
+}
+
+.p1 a {
+    color: red;
+}
+
+.p1 a:hover {
+    text-decoration:underline;
+}
+
+button {
+    display: flex;
+    position: relative;
+    top: 150px;
+    left: -10px;
+    width: 300px;
+    height: 30px;
+    padding-left:130px;
+    padding-top: 7px;
+    border-radius: 30px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+button a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+hr {
+    position: absolute;
+    top: 90%;
+    left: 5%;
+    border: none;       /* Remove a borda padrão */
+    height: 0.5px;        /* Define a altura da linha */
+    background-color: #8f8f8f; /* Cor da linha (preto, neste caso) */
+    width: 90%;
+}
+
+footer p {
+   position: absolute;
+   top: 90%;
+   color: rgb(30, 29, 29);
+   text-align: center;
+}
+
+/* Responsividade para telas pequenas (celulares) */
+@media screen and (max-width: 768px) {
+
+    /* Ajuste a posição e tamanho da caixa principal */
+    .box {
+        width: 90%;  /* Deixe a largura ocupar 90% da tela */
+        height: auto; /* Ajuste a altura automaticamente */
+        top: 20px;  /* Diminua o deslocamento do topo */
+        border-radius: 15px;  /* Reduza a borda arredondada */
+    }
+
+    h1 {
+        left: 50%;  /* Centralize o título */
+        transform: translateX(-50%);  /* Corrija o deslocamento */
+        font-size: 24px;  /* Diminua o tamanho da fonte */
+    }
+
+    label, input, button {
+        width: 80%;  /* Aumente a largura dos inputs */
+        left: 10%;  /* Centralize os inputs */
+        margin-top: 10px;
+        position: relative;
+    }
+
+    input {
+        padding-left: 15px; /* Ajuste o preenchimento do input */
+        font-size: 14px;  /* Diminua o tamanho da fonte */
+    }
+
+    .p1 {
+        top: 140px;
+    }
+
+    button {
+        padding-left: 10px;
+        padding-top: 5px;
+        font-size: 14px;
+    }
+
+    hr {
+        top: 80%;  /* Ajuste a posição da linha horizontal */
+    }
+
+    footer p {
+        font-size: 14px;  /* Diminua o tamanho da fonte do rodapé */
+    }
+}
+
+/* Responsividade para telas ainda menores (ex: celulares muito pequenos) */
+@media screen and (max-width: 480px) {
+
+    .box {
+        width: 100%;  /* Faça a caixa ocupar 100% da tela */
+        padding: 10px;  /* Adicione um padding para evitar que o conteúdo fique encostado nas bordas */
+    }
+
+    h1 {
+        font-size: 20px;  /* Diminua o tamanho do título */
+    }
+
+    input, button {
+        width: 100%;  /* Deixe os inputs e o botão com largura total */
+        padding-left: 10px;  /* Ajuste o preenchimento */
+        font-size: 14px;  /* Diminua o tamanho da fonte */
+    }
+
+    .p1 {
+        top: 120px;
+    }
+
+    button {
+        padding-left: 10px;
+    }
+
+    footer p {
+        font-size: 12px;  /* Diminua o tamanho da fonte do rodapé ainda mais */
+    }
+
+    hr {
+        top: 75%;  /* Ajuste a posição da linha */
+    }
+}
